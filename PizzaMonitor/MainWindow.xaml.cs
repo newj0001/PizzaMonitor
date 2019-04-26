@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzaMonitor.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace PizzaMonitor
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new PizzaViewModel();
+
         }
     }
 }
